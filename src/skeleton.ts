@@ -76,12 +76,13 @@ function calculate(array:string[]):number[]{
       longitude+= -1
     }
     }
+    console.log(latitude,longitude)
     return [latitude,longitude]
 }
 
 function isValid(a:number, b:number):boolean{
-
-  if (a+b === 0){
+  console.log("a+b",a+b)
+  if (a-b === 0){
     return true
   }else {
     return false
